@@ -8,13 +8,13 @@ let choice = prompt("1 - Decode\n2 - Encode\n3 - Exit") // choices for base64
 switch (choice)
 {
   case "1": // decode
-    let base64decode = prompt("Put base64 text here");
+    let base64decode = prompt("Put Base64 text here");
 
     if (base64decode)
     {
       var decoded = atob(base64decode);
       window.alert(decoded); // atob and btoa decode and encode base64 respectivefully
-      console.log(decoded)
+      console.log(decoded) // log the decoding/encoding incase if the person misses the pop-up
     }
     break;
   case "2": // encode
